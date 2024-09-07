@@ -14,7 +14,7 @@ async def autoapprove(client, message: ChatJoinRequest):
     photo_path = "https://telegra.ph/file/2efd63d60fa574cf19005.jpg"
     caption = f"Hello {user.mention} ✨\n\nYour Request to Join {chat.title} has been Approved.\n\nSend /start to know more.\nJoin US 👇👇"
     buttons = [
-        [InlineKeyboardButton("Malayalam Movies", url="https://t.me/+S5EJw3_afjq88XPK")]
+        [InlineKeyboardButton("𝙅𝙊𝙄𝙉 𝘾𝙃𝘼𝙉𝙉𝙀𝙇𝙎", url="https://t.me/CinemaKalavaraTG")]
     ]
     user_m = user.id
     x=await client.send_photo(
