@@ -21,7 +21,7 @@ logger.setLevel(logging.ERROR)
 @Client.on_message(filters.command("start") & filters.incoming)
 async def start(client , message):
     if message.chat.type in [enums.ChatType.GROUP , enums.ChatType.SUPERGROUP]:
-        button = [[InlineKeyboardButton("🔸 MAIN CHANNEL 1 🔸" , url="https://t.me/+S5EJw3_afjq88XPK")
+        button = [[InlineKeyboardButton("𝘾𝙄𝙉𝙀𝙈𝘼 𝙆𝘼𝙇𝘼𝙑𝘼𝙍𝘼" , url="https://t.me/Cinemakalavara_Group")
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply(text=script.START_TXT.format(message.from_user.mention , temp.U_NAME , temp.B_NAME) ,
@@ -38,7 +38,7 @@ async def start(client , message):
                                                            message.from_user.id))
     if len(message.command) != 2:
             mine = await client.get_me()
-            button = [[InlineKeyboardButton("🔸 MAIN CHANNEL 1 🔸" , url="https://t.me/+S5EJw3_afjq88XPK")
+            button = [[InlineKeyboardButton("𝘾𝙄𝙉𝙀𝙈𝘼 𝙆𝘼𝙇𝘼𝙑𝘼𝙍𝘼" , url="https://t.me/Cinemakalavara_Group")
                   ]]
             await client.send_message(chat_id=message.chat.id ,
                                       text=f"__Hello {message.from_user.mention} Iam Auto Approver Join Request Bot Just [Add Me To Your Group or Channnl](http://t.me/{mine.username}?startgroup=botstart)__" ,
