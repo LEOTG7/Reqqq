@@ -17,6 +17,11 @@ from pyrogram import types
 from Script import script 
 import aiohttp
 
+from pyrogram import utils as pyroutils
+
+pyroutils.MIN_CHAT_ID = -999999999999
+pyroutils.MIN_CHANNEL_ID = -100999999999999
+
 
 logging.config.fileConfig("logging.conf")
 logging.getLogger().setLevel(logging.INFO)
